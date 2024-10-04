@@ -7,7 +7,7 @@ RECORD_NAME="armbian.fa666.us.kg"  # 替换为你要更新的子域名
 CLOUDFLARE_API="https://api.cloudflare.com/client/v4"
 
 # 获取当前 IPv6 地址
-IPV6=$(ip -6 addr show | grep "inet6" | grep "global" | awk '{print $2}' | cut -d '/' -f 1)
+CURRENT_IPV6=$(ip -6 addr show | grep 'inet6' | grep -v '::1' | awk '{print $2}' | cut -d'/' -f1 | head -n 1)
 
 if [ -z "$CURRENT_IPV6" ]; then
     echo "未能获取 IPv6 地址。"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 设置变量
-API_TOKEN="ZceQayGKss3XQ0QD8gE3pDjdRLXKXIOiIwXvtY0d"              # 替换为你的 Cloudflare API Token
+API_TOKEN="b08d39dd2fdf5cb859411a0e518a12da8ce74"              # 替换为你的 Cloudflare API Token
 ZONE_ID="048eee499101d0d41340a7b31cce8835"                  # 替换为你的 Cloudflare 区域 ID
 RECORD_NAME="armbian.fa666.us.kg"  # 替换为你要更新的子域名
 CLOUDFLARE_API="https://api.cloudflare.com/client/v4"
